@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");
 
 * {
   box-sizing: border-box;
@@ -26,12 +26,12 @@ header {
   justify-content: space-between;
 }
 
-h1{
-  font-family:'Rouge Script', cursive, serif;
+h1 {
+  font-family: "Rouge Script", cursive, serif;
   font-size: 5rem;
 }
 
-.title-wrapper{
+.title-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +70,7 @@ nav a {
   margin: 0 auto;
 }
 
-.navmenu{
+.navmenu {
   display: none;
 }
 
@@ -110,9 +110,7 @@ h1 {
   grid-area: 1/1 / auto/span 3;
 }
 
-
-
-#hero-caption{
+#hero-caption {
   text-align: end;
 }
 
@@ -145,6 +143,10 @@ h1 {
 button:active {
   box-shadow: 2px 2px 5px black inset;
 }
+
+.hero-content .button {
+  margin-bottom: 2rem;
+}
 .caption-text {
   font-size: 2rem;
   font-weight: bold;
@@ -163,16 +165,22 @@ footer {
   background-color: var(--dark-clr);
 }
 
+@media (min-width: 600px){
+  .hero-content{
+    padding-top: 10%;
+  }
+}
+
 @media (min-width: 900px) {
   header {
     display: flex;
   }
 
-  h1{
+  h1 {
     align-items: center;
   }
 
-  .navmenu-mobile{
+  .navmenu-mobile {
     display: none;
   }
 
@@ -193,15 +201,24 @@ footer {
     font-size: 1.2rem;
   }
 
+  .navmenu li a:hover{
+    color: hsl(0, 0%, 0%);
+    background-color: var(--main-body-clr);
+    padding: 2px;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px;
+    font-weight: 600;
+  }
+
+  .current-page{
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+  }
+
   header:nth-child(1) {
     display: block;
   }
-
-  #logo {
-    /* float: right; */
-  }
-
-
 
   #menu-icon {
     display: none;
@@ -219,7 +236,6 @@ footer {
 
   nav ul {
     display: flex;
-    /* flex-wrap: wrap; */
   }
 
   .hero {
@@ -233,7 +249,7 @@ footer {
 
   .hero-content {
     grid-area: 1/2;
-    padding-left: 10%;
+    /* padding-left: 1rem; */
     padding-bottom: 1rem;
     font-size: 1.2rem;
   }
