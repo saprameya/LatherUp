@@ -42,6 +42,10 @@ h1 {
   padding: 0.5rem;
 }
 
+.title-secondary{
+  font-size: 0.8rem;
+}
+
 nav {
   position: relative;
 }
