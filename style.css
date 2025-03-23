@@ -68,6 +68,11 @@ nav a {
   background-color: #777;
 }
 
+.current-page {
+  font-weight: 600;
+  color: hsl(0, 0%, 0%);
+}
+
 #menu-icon {
   max-width: 2rem;
   margin: 0 auto;
@@ -211,10 +216,7 @@ footer {
     font-weight: 600;
   }
 
-  .current-page {
-    font-weight: 600;
-    color: hsl(0, 0%, 0%);
-  }
+
 
   header:nth-child(1) {
     display: block;
