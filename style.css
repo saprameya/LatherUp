@@ -20,23 +20,26 @@ body {
 header {
   padding: 1rem;
   background-color: var(--dark-clr);
-  position: relative;
-  min-height: 3rem;
   width: 100%;
-  justify-content: space-between;
 }
 
 h1 {
   font-family: "Rouge Script", cursive, serif;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .title-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 60%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  margin: 0 auto;
+}
+
+.title-wrapper * {
+  padding: 0.5rem;
 }
 
 nav {
@@ -59,14 +62,14 @@ nav a {
 
 #logo {
   order: -1;
-  max-width: 5rem;
+  max-width: 3rem;
   border: 3px solid black;
   border-radius: 50%;
   background-color: #777;
 }
 
 #menu-icon {
-  max-width: 3rem;
+  max-width: 2rem;
   margin: 0 auto;
 }
 
@@ -165,9 +168,13 @@ footer {
   background-color: var(--dark-clr);
 }
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
   header {
     display: flex;
+  }
+  .title-wrapper {
+    flex-direction: column;
+    margin-bottom: 2rem;
   }
 
   h1 {
@@ -184,18 +191,17 @@ footer {
   .navmenu {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: stretch;
   }
 
   .navmenu li {
     border-bottom: none;
-    width: 100%;
     margin: 0 auto;
     text-align: center;
     font-size: 1.2rem;
   }
 
-  .navmenu li a:hover{
+  .navmenu li a:hover {
     color: hsl(0, 0%, 0%);
     background-color: var(--main-body-clr);
     padding: 2px;
@@ -205,7 +211,7 @@ footer {
     font-weight: 600;
   }
 
-  .current-page{
+  .current-page {
     font-weight: 600;
     color: hsl(0, 0%, 0%);
   }
@@ -231,14 +237,12 @@ footer {
   nav ul {
     display: flex;
   }
-  .hero-content{
+  .hero-content {
     padding-top: 10%;
   }
 }
 
 @media (min-width: 900px) {
-  
-
   .hero {
     display: grid;
     grid-template-columns: 2rem 1fr 2rem;
