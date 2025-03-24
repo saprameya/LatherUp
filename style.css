@@ -134,6 +134,9 @@ main {
   padding-bottom: 0.8rem;
 }
 
+.leading-text{
+  font-weight: 600;
+}
 .button {
   font-size: 1.2rem;
   background-color: var(--dark-clr);
