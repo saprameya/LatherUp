@@ -25,7 +25,9 @@ header {
 
 h1 {
   font-family: "Rouge Script", cursive, serif;
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: var(--dark-clr);
 }
 
 .title-wrapper {
@@ -36,22 +38,22 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  gap: 0.5rem;
 }
 
-.title-wrapper * {
-  padding: 0.5rem;
-}
 
 .title-secondary{
   font-size: 0.8rem;
 }
 
+
+
 nav {
-  position: relative;
+  margin-top: 0.5rem;
 }
 
 nav ul ul {
-  position: absolute;
+  /* position: absolute; */
   display: none;
 }
 
@@ -65,7 +67,6 @@ nav a {
 }
 
 #logo {
-  order: -1;
   max-width: 3rem;
   border: 3px solid black;
   border-radius: 50%;
@@ -109,10 +110,7 @@ nav a {
 main {
   display: block;
 }
-h1 {
-  text-align: center;
-  background-color: var(--dark-clr);
-}
+
 .hero {
   display: grid;
   grid-template-columns: 2rem 1fr 2rem;
@@ -187,6 +185,7 @@ footer {
   }
 
   h1 {
+    font-size: 3rem;
     align-items: center;
   }
 
