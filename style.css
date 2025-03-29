@@ -253,7 +253,7 @@ footer {
 @media (min-width: 900px) {
   .hero {
     display: grid;
-    grid-template-columns: 2rem 1fr 2rem;
+    grid-template-columns: 15vw 1fr 2rem;
   }
 
   .hero img {
@@ -262,9 +262,9 @@ footer {
 
   .hero-content {
     grid-area: 1/2;
-    /* padding-left: 1rem; */
     padding-bottom: 1rem;
     font-size: 1.2rem;
+    margin: 0 0 0 10%;
   }
 
   .caption-text {
