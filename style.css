@@ -53,7 +53,6 @@ nav {
 }
 
 nav ul ul {
-  /* position: absolute; */
   display: none;
 }
 
@@ -73,7 +72,7 @@ nav a {
   background-color: #777;
 }
 
-.current-page {
+#current-page {
   font-weight: 600;
   color: hsl(0, 0%, 0%);
 }

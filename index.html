@@ -1,115 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lather Up</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <div class="title-wrapper">
-        <img
-        src="images/LatherUpLogo.png"
-        alt="Lather Up logo"
-        id="logo"
-        width="48"
-      />
-        <h1>Lather Up</h1><br>
-        <p class="title-secondary">Natural Handmade Soaps</p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lather Up</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+	</head>
+	<body>
+		<header>
+			<div class="title-wrapper">
+				<img
+					src="images/LatherUpLogo.png"
+					alt="Lather Up logo"
+					id="logo"
+					width="48"
+				/>
+				<h1>Lather Up</h1>
+				<br />
+				<p class="title-secondary">Natural Handmade Soaps</p>
+			</div>
 
-      </div>
+			<nav>
+				<label for="navmenu-toggle" class="navmenu-label"
+					><img
+						src="images/menuIcon.png"
+						alt="menu icon"
+						width="160"
+						id="menu-icon"
+					/>
+				</label>
+				<input type="checkbox" id="navmenu-toggle" class="navmenu-toggle" />
 
-      <nav>
-        <label for="navmenu-toggle" class="navmenu-label"
-          ><img
-            src="images/menuIcon.png"
-            alt="menu icon"
-            width="160"
-            id="menu-icon"
-          />
-        </label>
-        <input type="checkbox" id="navmenu-toggle" class="navmenu-toggle" />
+				<ul class="navmenu-mobile">
+					<li>
+						<a href="index.html"><span id="current-page">Home</span></a>
+					</li>
+					<li>
+						<a href="deals.html">Deals</a>
+					</li>
+					<li>
+						<a href="products.html">Products</a>
+					</li>
 
-        <ul class="navmenu-mobile">
-          <li>
-            <a href="index.html"><div class="current-page">Home</div></a>
-          </li>
-          <li>
-            <a href="deals.html">Deals</a>
-          </li>
-          <li>
-            <a href="products.html">Products</a>
-          </li>
-          <li>
-            <a href="order.html">Order</a>
-          </li>
-          <li>
-            <a href="cart.html">Cart</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="reviews.html">Reviews</a>
-          </li>
-        </ul>
-        <ul class="navmenu">
-          <li>
-            <a href="index.html"><span class="current-page">Home</span></a>
-          </li>
-          <li>
-            <a href="deals.html">Deals</a>
-          </li>
-          <li>
-            <a href="products.html">Products</a>
-          </li>
-          <li>
-            <a href="order.html">Order</a>
-          </li>
-          <li>
-            <a href="cart.html">Cart</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="reviews.html">Reviews</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="reviews.html">Reviews</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact Us</a>
+					</li>
+					<li>
+						<a href="cart.html">Cart</a>
+					</li>
+				</ul>
+				<ul class="navmenu">
+					<li>
+						<a href="index.html"><span id="current-page">Home</span></a>
+					</li>
+					<li>
+						<a href="deals.html">Deals</a>
+					</li>
+					<li>
+						<a href="products.html">Products</a>
+					</li>
+					<li>
+						<a href="order.html">Order</a>
+					</li>
+					<li>
+						<a href="cart.html">Cart</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="reviews.html">Reviews</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-    <main>
-      <div class="hero">
-        <picture>
-          <source
-            media="(max-width: 600px)"
-            srcset="images/mobileLatherHeroImg4.jpg"
-          />
-          <img src="images/Copy of latherHeroImg(5).jpg" alt="Handmade soap bar" />
-        </picture>
+		<main>
+			<div class="hero">
+				<picture>
+					<source
+						media="(max-width: 600px)"
+						srcset="images/mobileLatherHeroImg4.jpg"
+					/>
+					<img
+						src="images/Copy of latherHeroImg(5).jpg"
+						alt="Handmade soap bar"
+					/>
+				</picture>
 
-        <div class="hero-content">
-          <p class="leading-text">Indulge in Pure Bliss</p>
-          <p class="caption-text">
-            Handmade soaps. <br />
-            Natural ingredients.
-          </p>
-          <button class="button"><a href="deals.html">Shop deals</a></button>
-        </div>
-      </div>
+				<div class="hero-content">
+					<p class="leading-text">Indulge in Pure Bliss</p>
+					<p class="caption-text">
+						Handmade soaps. <br />
+						Natural ingredients.
+					</p>
+					<button class="button"><a href="deals.html">Shop deals</a></button>
+				</div>
+			</div>
 
-      <div class="benefits">
-        <h2>Why choose handmade soap?</h2>
-        <p>
-          Handmade soap offers a range of benefits that make it a superior
-          choice compared to commercial products. Unlike mass-produced soaps,
-          which often contain synthetic ingredients and harsh chemicals,
-          handmade soaps are crafted using natural, nourishing ingredients that
-          are gentler on the skin. 
-          <!-- This artisanal approach allows for
+			<div class="benefits">
+				<h2>Why choose handmade soap?</h2>
+				<p>
+					Handmade soap offers a range of benefits that make it a superior
+					choice compared to commercial products. Unlike mass-produced soaps,
+					which often contain synthetic ingredients and harsh chemicals,
+					handmade soaps are crafted using natural, nourishing ingredients that
+					are gentler on the skin.
+					<!-- This artisanal approach allows for
           customization, ensuring each bar is tailored to specific skin needs
           and preferences. Additionally, handmade soaps retain their natural
           glycerin, a humectant that helps hydrate and moisturize the skin,
@@ -119,14 +123,14 @@
           lifestyle. Overall, handmade soap not only enhances your bathing
           experience but also promotes healthier skin and aligns with a
           values-driven purchase. -->
-        </p>
-        <button class="button"><a href="about.html">Learn more</a></button>
-      </div>
-    </main>
-    <footer>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed recusandae
-      soluta libero numquam quaerat, incidunt labore iure dolorum ducimus
-      asperiores!
-    </footer>
-  </body>
+				</p>
+				<button class="button"><a href="about.html">Learn more</a></button>
+			</div>
+		</main>
+		<footer>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed recusandae
+			soluta libero numquam quaerat, incidunt labore iure dolorum ducimus
+			asperiores!
+		</footer>
+	</body>
 </html>
