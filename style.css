@@ -180,8 +180,8 @@ button:active {
 footer {
 	background-color: var(--dark-clr);
 	display: flex;
-	padding: 1rem;
-	justify-content: space-around;
+	padding: 2rem;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -191,7 +191,11 @@ footer li {
 
 .footer-wrapper {
 	max-width: fit-content;
-	margin: 0 auto;
+	/* margin: 0 auto; */
+}
+
+.contact-us .footer-wrapper{
+	margin: 0 0 0 auto;
 }
 
 .social-media-icons {
