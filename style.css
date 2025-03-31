@@ -217,6 +217,44 @@ footer li {
   font-size: 0.8rem;
 }
 
+.attributions-main{
+	max-width: 80%;
+	margin: 10% auto 0 auto;
+	border: 2px solid var(--dark-clr);
+	border-radius: 5px;
+	padding: 2rem;
+}
+
+.attributions-table
+{
+	max-width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+.attributions-table tr:nth-child(odd){
+	background-color: hsl(60, 82%, 79%);
+}
+
+#attributions-table-title-row{
+	background-color: var(--dark-clr);
+}
+
+.attributions-table td{
+	padding: 1rem;
+}
+
+.attributions-table tr td:nth-of-type(3){
+	max-width: 20%;
+	text-align: left;
+}
+
+.attributions-table img {
+	margin: 5px auto;
+}
+
 @media (min-width: 600px) {
 	header {
 		display: flex;
