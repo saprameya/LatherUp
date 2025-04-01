@@ -291,7 +291,7 @@ footer li {
 	background-color: #458c5c;
 }
 
-.attributions-table td{
+.attributions-table td:not(td:first-child){
 	padding: 1rem;
 }
 
