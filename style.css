@@ -115,7 +115,7 @@ main {
 	padding-top: 2rem;
 }
 
-.page-h3{
+.page-h3 {
 	text-align: center;
 	margin-top: 2rem;
 }
@@ -216,16 +216,14 @@ footer li {
 	display: flex;
 	gap: 0.5rem;
 	padding-top: 0.5rem;
-	
 }
 
-.social-media-icons img{
+.social-media-icons img {
 	border-radius: 50%;
 }
 
-.social-media-icons img:hover{
-	box-shadow: 2px 2px 5px #ffffff;
-	box-shadow: -2px -2px -5px #ffffff;
+.social-media-icons img:hover {
+	box-shadow: 0 0 2px 5px hsl(139, 34%, 71%);
 }
 
 .site-map,
@@ -248,7 +246,7 @@ footer li {
 	padding: 2rem;
 	gap: 3rem 1rem;
 	justify-content: center;
-	
+
 	margin: auto;
 }
 
