@@ -216,6 +216,16 @@ footer li {
 	display: flex;
 	gap: 0.5rem;
 	padding-top: 0.5rem;
+	
+}
+
+.social-media-icons img{
+	border-radius: 50%;
+}
+
+.social-media-icons img:hover{
+	box-shadow: 2px 2px 5px #ffffff;
+	box-shadow: -2px -2px -5px #ffffff;
 }
 
 .site-map,
@@ -236,7 +246,7 @@ footer li {
 	margin: 0 auto;
 	grid-template-columns: 1fr;
 	padding: 2rem;
-	gap: 1rem;
+	gap: 3rem 1rem;
 	justify-content: center;
 	
 	margin: auto;
@@ -259,9 +269,11 @@ footer li {
 }
 
 .card-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	border: 15px solid #9ca5ce;
 	height: 100%;
-	
 	padding: 0.5rem;
 }
 
