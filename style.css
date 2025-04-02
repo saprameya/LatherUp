@@ -34,9 +34,7 @@ h1 {
 	text-align: center;
 	background-color: #458c5c;
 }
-h2 {
-	text-align: center;
-}
+
 
 .title-wrapper {
 	display: flex;
@@ -112,6 +110,7 @@ main {
 }
 
 .page-h2 {
+	text-align: center;
 	padding-top: 2rem;
 }
 
