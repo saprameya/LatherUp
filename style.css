@@ -286,6 +286,17 @@ footer li {
 	border-collapse: collapse;
 }
 
+.attributions-table th{
+	color: #fafacc;
+}
+
+.attributions-table caption{
+	text-align: center;
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
 .attributions-table tr:nth-child(odd) {
 	background-color: hsl(60, 82%, 79%);
 }
