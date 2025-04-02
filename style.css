@@ -155,6 +155,7 @@ main {
 	border: 3px outset;
 	box-shadow: 2px 2px 5px black;
 	transition: all 2s ease;
+	cursor: pointer;
 }
 
 .button a {
@@ -237,6 +238,7 @@ footer li {
 	padding: 2rem;
 	gap: 1rem;
 	justify-content: center;
+	
 	margin: auto;
 }
 
@@ -247,6 +249,8 @@ footer li {
 	font-size: 0.8rem;
 	max-width: 400px;
 	margin: auto;
+	box-shadow: 3px 3px 5px;
+	height: 100%;
 }
 
 .card * {
@@ -256,7 +260,7 @@ footer li {
 
 .card-wrapper {
 	border: 15px solid #9ca5ce;
-
+	
 	padding: 0.5rem;
 }
 
