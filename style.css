@@ -318,6 +318,26 @@ footer li {
 	margin: 5px auto;
 }
 
+.deal{
+	/* background-color: #94c2a6; */
+	padding: 2rem;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.promo-code{
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.deal-disclaimer{
+	padding: 2rem;
+}
+.deal-image{
+	margin: 0 5px 0 1px;
+	border-bottom: 2px solid #fafacc;
+}
+
 @media (min-width: 600px) {
 	header {
 		display: flex;
