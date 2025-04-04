@@ -72,6 +72,7 @@ nav a {
 }
 
 #current-page {
+	cursor: pointer;
 	font-weight: 600;
 	color: hsl(0, 0%, 0%);
 }
@@ -158,7 +159,7 @@ main {
 }
 
 .button:hover{
-	scale: 1.05;
+	scale: 1.03;
 }
 
 .button a {
@@ -193,6 +194,38 @@ button:active {
 	margin-bottom: 0.8rem;
 	margin-left: 2rem;
 }
+
+.learn-main{
+	padding: 2rem;
+	margin: 1rem;
+	justify-content: center;
+	max-width: 70%;
+	margin: 0 auto;
+	background-image: url(images/bubble-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+
+
+.learn-main h2{
+	padding-bottom: 2rem;
+}
+.learn-main h3{
+	padding-bottom: 1rem;
+}
+
+.learn-main li{
+	list-style-image: url(images/single-bubble.png);
+	margin-bottom: 2rem;
+}
+
+.learn-main li::marker{
+	padding-top: 2rem;
+}
+
+
 
 footer {
 	background-color: #458c5c;
@@ -381,14 +414,16 @@ footer li {
 		font-size: 1.2rem;
 	}
 
+
+
 	.navmenu li a:hover {
 		color: hsl(0, 0%, 0%);
 		background-color: #fafacc;
-		padding: 2px;
 		border: 1px solid hsl(0, 0%, 0%);
 		border-radius: 5px;
 		box-shadow: 2px 2px 4px;
 		font-weight: 600;
+		padding: 2px;
 	}
 
 	header:nth-child(1) {
@@ -418,6 +453,10 @@ footer li {
 
 	.category {
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.learn-main h2{
+		font-size: 2rem;
 	}
 
 	footer {
