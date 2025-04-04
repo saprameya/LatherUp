@@ -385,6 +385,11 @@ footer li {
 	border-bottom: 2px solid #fafacc;
 }
 
+.video-link{
+	color: #458c5c;
+	font-weight: 900;
+}
+
 @media (min-width: 600px) {
 	header {
 		display: flex;
@@ -468,10 +473,7 @@ footer li {
 		background-repeat: no-repeat;
 	}
 
-	.video-link{
-		color: #458c5c;
-		font-weight: 900;
-	}
+
 
 	footer {
 		flex-wrap: nowrap;
