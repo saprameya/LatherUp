@@ -199,12 +199,11 @@ button:active {
 	padding: 2rem;
 	margin: 1rem;
 	justify-content: center;
-	max-width: 70%;
 	margin: 0 auto;
 	background-image: url(images/bubble-background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	
+	max-width: 90%;
 }
 
 
@@ -516,5 +515,10 @@ footer li {
 
 	.attributions-table {
 		max-width: 70%;
+	}
+
+	.learn-main{
+	max-width: 70%;
+
 	}
 }
