@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 
+html{
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -108,6 +113,7 @@ nav a {
 
 main {
 	display: block;
+	
 }
 
 .page-h2 {
@@ -460,6 +466,11 @@ footer li {
 	.learn-main{
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+
+	.video-link{
+		color: #458c5c;
+		font-weight: 900;
 	}
 
 	footer {
