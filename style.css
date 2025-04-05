@@ -249,7 +249,7 @@ button:active {
 
 
 .review-card p{
-	border: 7px double #458c5c;
+	border: 7px ridge #458c5c;
 	border-radius: 2rem;
 	box-shadow: 5px 5px 5px;
 	padding: 1rem;
@@ -265,7 +265,7 @@ button:active {
 	top:0;
 	left: 0;
 	transform: translate(0, -50%) scale(30%);
-	border: 1rem solid #458c5c;
+	border: 1rem ridge #458c5c;
 	border-radius: 50%;
 	box-shadow: 1rem 1rem 15px;
 	
