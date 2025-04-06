@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 
-html{
+html {
 	max-width: 1920px;
 	margin-left: auto;
 	margin-right: auto;
@@ -40,7 +40,6 @@ h1 {
 	background-color: #458c5c;
 }
 
-
 .title-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -67,6 +66,7 @@ nav ul ul {
 nav a {
 	color: #fafacc;
 	text-decoration: none;
+	font-weight: 900;
 }
 
 #logo {
@@ -113,7 +113,6 @@ nav a {
 
 main {
 	display: block;
-	
 }
 
 .page-h2 {
@@ -164,7 +163,7 @@ main {
 	cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
 	scale: 1.03;
 }
 
@@ -201,45 +200,41 @@ button:active {
 	margin-left: 2rem;
 }
 
-.learn-main{
+.learn-main {
 	padding: 2rem;
 	margin: 1rem;
 	justify-content: center;
 	margin: 0 auto;
 	background-image: url(images/bubble-background.jpg);
-	background-size:contain;
+	background-size: contain;
 	background-repeat: repeat;
 	max-width: 90%;
 }
 
-
-
-.learn-main h2{
+.learn-main h2 {
 	padding-bottom: 2rem;
 }
-.learn-main h3{
+.learn-main h3 {
 	padding-bottom: 1rem;
 }
 
-.learn-main li{
+.learn-main li {
 	list-style-image: url(images/single-bubble.png);
 	margin-bottom: 2rem;
 }
 
-.learn-main li::marker{
+.learn-main li::marker {
 	padding-top: 2rem;
 }
 
-.reviews-main{
+.reviews-main {
 	width: 90%;
 	margin: 10vh auto;
 	display: grid;
-	gap:8rem 1rem;
-	
-	
+	gap: 8rem 1rem;
 }
 
-.review-card{
+.review-card {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
@@ -247,28 +242,37 @@ button:active {
 	margin: 0 auto;
 }
 
-
-.review-card p{
-	border: 7px ridge #458c5c;
+.review-card p {
+	border: 7px double #ecec41;
 	border-radius: 2rem;
 	box-shadow: 5px 5px 5px;
 	padding: 1rem;
 	padding-top: 10vh;
 	height: 100%;
-	background-color: hsl(139, 34%, 81%);
+	background-color: #bedfc9;
 }
 
-.review-image{
+.review-image {
 	width: 100%;
 	margin: 0 auto;
 	position: absolute;
-	top:0;
+	top: 0;
 	left: 0;
 	transform: translate(0, -50%) scale(30%);
-	border: 1rem ridge #458c5c;
+	border: 1rem double #ecec41;
 	border-radius: 50%;
 	box-shadow: 1rem 1rem 15px;
-	
+}
+
+.contact-main {
+	background-image: url(images/contact-background.jpg);
+	background-size: contain;
+	font-weight: 700;
+}
+
+.contact-list-wrapper {
+	width: fit-content;
+	margin: 5rem auto;
 }
 
 footer {
@@ -285,7 +289,6 @@ footer li {
 
 .footer-wrapper {
 	max-width: fit-content;
-	/* margin: 0 auto; */
 }
 
 .contact-us .footer-wrapper {
@@ -320,8 +323,9 @@ footer li {
 }
 
 .contact-us a,
-.notes-content a{
-	color: #fafacc;
+.notes-content a {
+	/* color: #fafacc; */
+	font-weight: 700;
 }
 
 .category {
@@ -365,6 +369,13 @@ footer li {
 	padding: 2rem;
 }
 
+
+
+.cart-table td{
+	border: 1px solid #458c5c;
+}
+
+.cart-table,
 .attributions-table {
 	text-align: center;
 	margin: 0 auto;
@@ -372,21 +383,29 @@ footer li {
 	border-collapse: collapse;
 }
 
-.attributions-table th{
+.cart-table{
+	min-width: 90%;
+	border: 1px solid #458c5c;
+	margin: 2rem auto;
+}
+.cart-table th,
+.attributions-table th {
 	color: #fafacc;
 }
 
-.attributions-table caption{
+.attributions-table caption {
 	text-align: center;
 	padding: 1rem;
 	font-size: 1.5rem;
 	font-weight: 600;
 }
 
+.cart-table tr:nth-child(odd),
 .attributions-table tr:nth-child(odd) {
 	background-color: hsl(60, 82%, 79%);
 }
 
+#cart-table-title-row,
 #attributions-table-title-row {
 	background-color: #458c5c;
 }
@@ -400,34 +419,48 @@ footer li {
 	font-size: 0.7rem;
 }
 
+.cart-table img,
 .attributions-table img {
 	margin: 5px auto;
 }
 
-.deal{
+#total-row{
+	font-weight: 900;
+	background-color: #458c5c;
+}
+
+#total-row td{
+	padding: 1rem;
+}
+
+#order-button{
+	margin-left: 5%;
+	margin-bottom: 2rem;
+}
+
+.deal {
 	padding: 2rem;
 	font-size: 2rem;
 	font-weight: 700;
 }
 
-.promo-code{
+.promo-code {
 	font-size: 1rem;
 	font-weight: 400;
 }
 
-.deal-disclaimer{
+.deal-disclaimer {
 	padding: 2rem;
 }
-.deal-image{
+.deal-image {
 	margin: 0 5px 0 1px;
 	border-bottom: 2px solid #fafacc;
 }
 
-.video-link{
-	color: #458c5c;
+.video-link {
+	/* color: #458c5c; */
 	font-weight: 900;
 }
-
 
 @media (min-width: 600px) {
 	header {
@@ -462,8 +495,6 @@ footer li {
 		text-align: center;
 		font-size: 1.2rem;
 	}
-
-
 
 	.navmenu li a:hover {
 		color: hsl(0, 0%, 0%);
@@ -504,23 +535,20 @@ footer li {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.learn-main h2{
+	.learn-main h2 {
 		font-size: 2rem;
 	}
-	.learn-main{
+	.learn-main {
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 
-	.reviews-main{
+	.reviews-main {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	
-
-	.review-image{
+	.review-image {
 		transform: translate(0, -50%) scale(20%);
-
 	}
 
 	footer {
@@ -538,6 +566,10 @@ footer li {
 	.notes {
 		flex: 4;
 		padding-top: 0;
+	}
+
+	.contact-main {
+		font-size: 1.8rem;
 	}
 }
 
@@ -582,21 +614,19 @@ footer li {
 		max-width: 70%;
 	}
 
-	.learn-main{
-	max-width: 70%;
-
+	.learn-main {
+		max-width: 70%;
 	}
 
-	.reviews-main{
+	.reviews-main {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.review-card{
+	.review-card {
 		/* width: 30%; */
 	}
 
-	.review-image{
+	.review-image {
 		transform: translate(0, -50%) scale(30%);
-
 	}
 }
