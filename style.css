@@ -324,7 +324,6 @@ footer li {
 
 .contact-us a,
 .notes-content a {
-	/* color: #fafacc; */
 	font-weight: 700;
 }
 
@@ -369,9 +368,7 @@ footer li {
 	padding: 2rem;
 }
 
-
-
-.cart-table td{
+.cart-table td {
 	border: 1px solid #458c5c;
 }
 
@@ -383,7 +380,7 @@ footer li {
 	border-collapse: collapse;
 }
 
-.cart-table{
+.cart-table {
 	width: 90%;
 	border: 1px solid #458c5c;
 	margin: 2rem auto;
@@ -425,22 +422,22 @@ footer li {
 }
 
 .cart-table td:nth-child(4),
-#total-row td:nth-child(4){
+#total-row td:nth-child(4) {
 	padding-right: 10%;
 	text-align: right;
 }
 
-#total-row{
+#total-row {
 	font-size: 1.2rem;
 	font-weight: 900;
 	background-color: #458c5c;
 }
 
-#total-row td{
+#total-row td {
 	padding: 1rem;
 }
 
-#order-button{
+#order-button {
 	margin-left: 5%;
 	margin-bottom: 2rem;
 }
@@ -468,34 +465,40 @@ footer li {
 	font-weight: 900;
 }
 
-form{
+form {
 	max-width: 90%;
 	margin: 2rem auto;
 	padding: 2rem;
-	background-color: #f7f7b5;
+	background-color: #bedfc9;
 	opacity: 0.8;
 	box-shadow: 5px 5px 5px;
+	border: 3px solid #ecec41;
+	border-radius: 2rem;
 }
 
-form *{
+form * {
 	display: block;
 	padding: 0.5rem 1rem;
-	
 }
-
-form label{
+fieldset {
+	border: 1px solid #458c5c;
+	border-radius: 1rem;
+}
+form label {
 	margin-top: 1rem;
 }
 
-form input, textarea{
+form input,
+textarea {
 	width: 90%;
+	border-radius: 0.5rem;
 }
 
-textarea{
+textarea {
 	height: 10rem;
 }
 
-#contact-button{
+#contact-button {
 	margin-top: 1rem;
 }
 @media (min-width: 600px) {
@@ -662,11 +665,12 @@ textarea{
 		transform: translate(0, -50%) scale(30%);
 	}
 
-	form{
+	form {
 		max-width: 70%;
 	}
 
-	form input, textarea{
+	form input,
+	textarea {
 		width: 80%;
 	}
 }
