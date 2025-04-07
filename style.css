@@ -384,7 +384,7 @@ footer li {
 }
 
 .cart-table{
-	min-width: 90%;
+	width: 90%;
 	border: 1px solid #458c5c;
 	margin: 2rem auto;
 }
@@ -465,23 +465,30 @@ footer li {
 }
 
 .video-link {
-	/* color: #458c5c; */
 	font-weight: 900;
 }
 
 form{
-	width: fit-content;
+	max-width: 90%;
 	margin: 2rem auto;
 	padding: 2rem;
+	background-color: #f7f7b5;
+	opacity: 0.8;
+	box-shadow: 5px 5px 5px;
 }
 
 form *{
 	display: block;
-	padding: 1rem;
+	padding: 0.5rem 1rem;
+	
+}
+
+form label{
+	margin-top: 1rem;
 }
 
 form input, textarea{
-	width: 80vw;
+	width: 90%;
 }
 
 textarea{
@@ -655,7 +662,11 @@ textarea{
 		transform: translate(0, -50%) scale(30%);
 	}
 
+	form{
+		max-width: 70%;
+	}
+
 	form input, textarea{
-		width: 50vw;
+		width: 80%;
 	}
 }
