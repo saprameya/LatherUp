@@ -424,7 +424,14 @@ footer li {
 	margin: 5px auto;
 }
 
+.cart-table td:nth-child(4),
+#total-row td:nth-child(4){
+	padding-right: 10%;
+	text-align: right;
+}
+
 #total-row{
+	font-size: 1.2rem;
 	font-weight: 900;
 	background-color: #458c5c;
 }
@@ -462,6 +469,28 @@ footer li {
 	font-weight: 900;
 }
 
+form{
+	width: fit-content;
+	margin: 2rem auto;
+	padding: 2rem;
+}
+
+form *{
+	display: block;
+	padding: 1rem;
+}
+
+form input, textarea{
+	width: 80vw;
+}
+
+textarea{
+	height: 10rem;
+}
+
+#contact-button{
+	margin-top: 1rem;
+}
 @media (min-width: 600px) {
 	header {
 		display: flex;
@@ -622,11 +651,11 @@ footer li {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	.review-card {
-		/* width: 30%; */
-	}
-
 	.review-image {
 		transform: translate(0, -50%) scale(30%);
+	}
+
+	form input, textarea{
+		width: 50vw;
 	}
 }

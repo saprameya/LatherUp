@@ -89,21 +89,22 @@
                     Need to get in touch? <br> Contact us:
                 </h2>
                 
-                <div class="contact-list">
-                    <div class="contact-list-wrapper">
-                        <ul>
-                                                <li>Email: <a href="mailto: s3794407@students.fscj.edu">s3794407@students.fscj.edu</a></li>
-                                                <li>Call us: <a href="tel:+13334567890">+13334567890</a></li>
-                                                <li class="social-media-icons" id="social-media-icons">Social media:
-                                                    <a href="#social-media-icons"><img src="images/facebook.png" alt="facebook link" width="30" onclick="alert('Coming soon')" /></a>
-                                                    <a href="#social-media-icons"><img src="images/xlink.png" alt="x link" width="30" onclick="alert('Coming soon')"/></a>
-                                                    <a href="#social-media-icons"><img src="images/linkedin.png" alt="x link" width="30" onclick="alert('Coming soon')"/></a>
-                                                </li>
-                                            </ul>
-                    </div>
-                </div>
+               
             </div>
-			
+			<form id="#contact-form">
+				
+				<fieldset>
+					<label for="first-name">First name</label>
+					<input type="text" name="first-name" id="first-name">
+					<label for="last-name">Last name</label>
+					<input type="text" name="last-name" id="last-name">
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email">
+					<label for="comments">Comments</label>
+					<textarea name="comments" id="comments"></textarea>
+				</fieldset>
+				<button class="button" id="contact-button" onclick="alert('Thank you for contacting us. We will get in touch with you soon.')">Submit</button>
+			</form> 
 		</main>
 		<footer>
 			<div class="site-map">
