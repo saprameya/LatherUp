@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
-
 html {
 	max-width: 1920px;
 	margin-left: auto;
@@ -76,7 +74,7 @@ nav a {
 	background-color: #777;
 }
 
-#current-page {
+.current-page {
 	cursor: pointer;
 	font-weight: 600;
 	color: #ffffff;
@@ -161,17 +159,18 @@ main {
 	box-shadow: 2px 2px 5px black;
 	transition: all 1s ease;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .button:hover {
 	scale: 1.03;
 }
 
-.button a {
+/* .button a {
 	color: #fafacc;
 	text-decoration: none;
 	padding-bottom: 0;
-}
+} */
 button:active {
 	box-shadow: 2px 2px 5px black inset;
 }
@@ -190,14 +189,22 @@ button:active {
 	font-size: 2rem;
 	font-weight: bold;
 }
-.benefits h2,
-.benefits p {
-	padding: 0 2rem 0.8rem 2rem;
+.benefits{
+	padding: 2rem;
 }
 
-.benefits button {
-	margin-bottom: 0.8rem;
-	margin-left: 2rem;
+.benefits * {
+	/* padding: 0 2rem 0.8rem 2rem; */
+}
+
+.benefits p{
+	margin-bottom: 1rem;
+}
+
+#benefits-button {
+	/* margin-left: 2rem;  */
+	padding: 3px 8px;
+
 }
 
 .learn-main {
@@ -370,6 +377,10 @@ footer a{
 	padding: 0.5rem;
 }
 
+.attributions-link{
+	color: #ffffff;
+}
+
 .attributions-main {
 	margin: 10% auto 0 auto;
 	padding: 2rem;
@@ -394,7 +405,8 @@ footer a{
 }
 .cart-table th,
 .attributions-table th {
-	color: #fafacc;
+	color: #ffffff;
+	padding: 1rem 0;
 }
 
 .attributions-table caption {
@@ -412,6 +424,7 @@ footer a{
 #cart-table-title-row,
 #attributions-table-title-row {
 	background-color: #346A45;
+	
 }
 
 .attributions-table td:not(td:first-child) {
@@ -438,6 +451,7 @@ footer a{
 	font-size: 1.2rem;
 	font-weight: 900;
 	background-color: #346A45;
+	color: #ffffff;
 }
 
 #total-row td {
@@ -641,9 +655,9 @@ textarea {
 		font-size: 3rem;
 	}
 
-	.button {
+	/* .button {
 		padding: 10px 12px;
-	}
+	} */
 
 	.benefits {
 		grid-area: 2/2;

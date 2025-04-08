@@ -2,13 +2,19 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Website selling handmade soaps">
-		<meta name="keywords" content="soap, handmade, gentle, fragrance">
-		<meta name="author" content="Sheela Aprameya">
+		<meta name="description" content="Website selling handmade soaps" />
+		<meta name="keywords" content="soap, handmade, gentle, fragrance" />
+		<meta name="author" content="Sheela Aprameya" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Lather Up</title>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<header>
@@ -36,7 +42,7 @@
 
 				<ul class="navmenu-mobile">
 					<li>
-						<span id="current-page">Home</span>
+						<span class="current-page">Home</span>
 					</li>
 					<li>
 						<a href="deals.html">Deals</a>
@@ -60,7 +66,7 @@
 				</ul>
 				<ul class="navmenu">
 					<li>
-						<span id="current-page">Home</span>
+						<span class="current-page">Home</span>
 					</li>
 					<li>
 						<a href="deals.html">Deals</a>
@@ -92,10 +98,7 @@
 						media="(max-width: 600px)"
 						srcset="images/mobileLatherHeroImg.jpg"
 					/>
-					<img
-						src="images/latherHeroImg.jpg"
-						alt="Handmade soap bar"
-					/>
+					<img src="images/latherHeroImg.jpg" alt="Handmade soap bar" />
 				</picture>
 
 				<div class="hero-content">
@@ -104,7 +107,7 @@
 						Handmade soaps. <br />
 						Natural ingredients.
 					</p>
-					<button class="button"><a href="deals.html">Shop deals</a></button>
+					<a href="deals.html" class="button">Shop deals</a>
 				</div>
 			</div>
 
@@ -117,14 +120,16 @@
 					handmade soaps are crafted using natural, nourishing ingredients that
 					are gentler on the skin.
 				</p>
-				<button class="button"><a href="learn.html">Learn more</a></button>
+				<a href="learn.html" class="button benefits-button" id="benefits-button"
+					>Learn more</a
+				>
 			</div>
 		</main>
 		<footer>
 			<div class="site-map">
 				<div class="footer-wrapper">
 					<p>Site map:</p>
-					<ul class="navmenu-footer ">
+					<ul class="navmenu-footer">
 						<li>
 							<a href="index.html">Home</a>
 						</li>
@@ -148,18 +153,35 @@
 						</li>
 					</ul>
 				</div>
-
 			</div>
 			<div class="contact-us">
 				<div class="footer-wrapper">
 					<p>Connect with us:</p>
 					<ul>
-						<li><a href="mailto: s3794407@students.fscj.edu">Email</a></li>
+						<li><a href="mailto:s3794407@students.fscj.edu">Email</a></li>
 						<li><a href="tel:+13334567890">Call us</a></li>
 						<li class="social-media-icons" id="social-media-icons">
-							<a href="#social-media-icons"><img src="images/facebook.png" alt="facebook link" width="30" onclick="alert('Coming soon')" /></a>
-							<a href="#social-media-icons"><img src="images/xlink.png" alt="x link" width="30" onclick="alert('Coming soon')"/></a>
-							<a href="#social-media-icons"><img src="images/linkedin.png" alt="x link" width="30" onclick="alert('Coming soon')"/></a>
+							<a href="#social-media-icons"
+								><img
+									src="images/facebook.png"
+									alt="facebook link"
+									width="30"
+									onclick="alert('Coming soon')"
+							/></a>
+							<a href="#social-media-icons"
+								><img
+									src="images/xlink.png"
+									alt="x link"
+									width="30"
+									onclick="alert('Coming soon')"
+							/></a>
+							<a href="#social-media-icons"
+								><img
+									src="images/linkedin.png"
+									alt="x link"
+									width="30"
+									onclick="alert('Coming soon')"
+							/></a>
 						</li>
 					</ul>
 				</div>
@@ -167,15 +189,20 @@
 
 			<div class="notes">
 				<div>
-					<p>Disclaimer: </p>
-					<p class="notes-content">	This website was created as part of a class project, and does not represent an actual business. Products are not real, and buttons on the website do not actually submit or store any information anywhere.</p>
+					<p>Disclaimer:</p>
+					<p class="notes-content">
+						This website was created as part of a class project, and does not
+						represent an actual business. Products are not real, and buttons on
+						the website do not actually submit or store any information
+						anywhere.
+					</p>
 				</div>
 				<div class="notes-content">
-					Images used have been downloaded from different websites under their respective licensing guidelines, and may have been edited or used as is. See our image <a href="attributions.html">attributions.</a>
+					Images used have been downloaded from different websites under their
+					respective licensing guidelines, and may have been edited or used as
+					is. See our image <a href="attributions.html">attributions.</a>
 				</div>
-
 			</div>
-
 		</footer>
 	</body>
 </html>
