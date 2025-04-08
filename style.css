@@ -453,7 +453,9 @@ footer a {
 	margin-bottom: 2rem;
 }
 
-.deals{
+.deals {
+	display: flex;
+	flex-direction: column-reverse;
 	margin-top: 2rem;
 }
 
@@ -654,6 +656,13 @@ textarea {
 	.benefits {
 		grid-area: 2/2;
 	}
+
+	.deals {
+		flex-direction: row;
+		margin-right: 2rem;
+	}
+
+	
 
 	.category {
 		grid-template-columns: 1fr 1fr 1fr;
