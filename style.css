@@ -274,8 +274,12 @@ button:active {
 
 .contact-main {
 	background-image: url(images/contact-background.jpg);
-	background-size: contain;
+	background-repeat:repeat;
 	font-weight: 700;
+}
+
+.contact-main h2{
+	
 }
 
 .contact-list-wrapper {
@@ -492,12 +496,13 @@ form {
 	max-width: 90%;
 	margin: 2rem auto;
 	padding: 2rem;
-	background-color: #bedfc9;
-	opacity: 0.8;
+	background-color: rgb(190, 223, 201);
 	box-shadow: 5px 5px 5px;
 	border: 3px solid #ecec41;
 	border-radius: 2rem;
 }
+
+
 
 form * {
 	display: block;
@@ -523,7 +528,6 @@ textarea {
 
 #contact-button {
 	margin-top: 1rem;
-	background-color: #346A45;
 }
 @media (min-width: 600px) {
 	header {
