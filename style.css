@@ -265,6 +265,7 @@ button:active {
 	background-image: url(images/contact-background.jpg);
 	background-repeat: repeat;
 	font-weight: 700;
+	margin-top: 1rem;
 }
 
 .contact-list-wrapper {
