@@ -453,8 +453,11 @@ footer a {
 	margin-bottom: 2rem;
 }
 
+.deals{
+	margin-top: 2rem;
+}
+
 .deal {
-	margin-top: 3rem;
 	padding: 2rem;
 	font-size: 2rem;
 	font-weight: 700;
