@@ -27,7 +27,7 @@ body {
 
 header {
 	padding: 1rem;
-	background-color: #346A45;
+	background-color: #346a45;
 	width: 100%;
 	position: relative;
 }
@@ -36,7 +36,7 @@ h1 {
 	font-family: 'Rouge Script', cursive, serif;
 	font-size: 2rem;
 	text-align: center;
-	background-color: #346A45;
+	background-color: #346a45;
 	line-height: 0.7;
 }
 
@@ -44,8 +44,6 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	color: #fafacc;
-	/* max-width: 60%; */
-	/* flex-direction: row; */
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
@@ -54,10 +52,6 @@ h1 {
 
 .title-secondary {
 	font-size: 0.8rem;
-	/* line-height: 0.3; */
-}
-nav {
-	/* margin-top: 0.5rem; */
 }
 
 nav ul ul {
@@ -158,7 +152,7 @@ main {
 }
 .button {
 	font-size: 1.2rem;
-	background-color: #346A45;
+	background-color: #346a45;
 	color: #fafacc;
 	padding: 3px 8px;
 	border-radius: 10px;
@@ -173,11 +167,6 @@ main {
 	scale: 1.03;
 }
 
-/* .button a {
-	color: #fafacc;
-	text-decoration: none;
-	padding-bottom: 0;
-} */
 button:active {
 	box-shadow: 2px 2px 5px black inset;
 }
@@ -196,22 +185,16 @@ button:active {
 	font-size: 2rem;
 	font-weight: bold;
 }
-.benefits{
+.benefits {
 	padding: 2rem;
 }
 
-.benefits * {
-	/* padding: 0 2rem 0.8rem 2rem; */
-}
-
-.benefits p{
+.benefits p {
 	margin-bottom: 1rem;
 }
 
 #benefits-button {
-	/* margin-left: 2rem;  */
 	padding: 3px 8px;
-
 }
 
 .learn-main {
@@ -280,12 +263,8 @@ button:active {
 
 .contact-main {
 	background-image: url(images/contact-background.jpg);
-	background-repeat:repeat;
+	background-repeat: repeat;
 	font-weight: 700;
-}
-
-.contact-main h2{
-	
 }
 
 .contact-list-wrapper {
@@ -294,8 +273,8 @@ button:active {
 }
 
 footer {
-	color:#fafacc;
-	background-color: #346A45;
+	color: #fafacc;
+	background-color: #346a45;
 	display: flex;
 	padding: 2rem;
 	justify-content: space-between;
@@ -307,9 +286,8 @@ footer li {
 	padding: 5px 0;
 }
 
-footer a{
+footer a {
 	color: #fafacc;
-	
 }
 
 .footer-wrapper {
@@ -389,7 +367,7 @@ footer a{
 	padding: 0.5rem;
 }
 
-.attributions-link{
+.attributions-link {
 	color: #ffffff;
 }
 
@@ -399,7 +377,7 @@ footer a{
 }
 
 .cart-table td {
-	border: 1px solid #346A45;
+	border: 1px solid #346a45;
 }
 
 .cart-table,
@@ -412,7 +390,7 @@ footer a{
 
 .cart-table {
 	width: 90%;
-	border: 1px solid #346A45;
+	border: 1px solid #346a45;
 	margin: 2rem auto;
 }
 .cart-table th,
@@ -435,8 +413,7 @@ footer a{
 
 #cart-table-title-row,
 #attributions-table-title-row {
-	background-color: #346A45;
-	
+	background-color: #346a45;
 }
 
 .attributions-table td:not(td:first-child) {
@@ -462,7 +439,7 @@ footer a{
 #total-row {
 	font-size: 1.2rem;
 	font-weight: 900;
-	background-color: #346A45;
+	background-color: #346a45;
 	color: #ffffff;
 }
 
@@ -509,14 +486,12 @@ form {
 	border-radius: 2rem;
 }
 
-
-
 form * {
 	display: block;
 	padding: 0.5rem 1rem;
 }
 fieldset {
-	border: 1px solid #346A45;
+	border: 1px solid #346a45;
 	border-radius: 1rem;
 }
 form label {
@@ -545,9 +520,8 @@ textarea {
 		margin-bottom: 2rem;
 	}
 
-	#logo{
-		transform: translate(0, 130% );
-		/* margin: 0.5rem; */
+	#logo {
+		transform: translate(0, 130%);
 	}
 
 	h1 {
@@ -672,10 +646,6 @@ textarea {
 	.caption-text {
 		font-size: 3rem;
 	}
-
-	/* .button {
-		padding: 10px 12px;
-	} */
 
 	.benefits {
 		grid-area: 2/2;
