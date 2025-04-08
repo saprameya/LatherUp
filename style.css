@@ -293,11 +293,12 @@ footer {
 
 footer li {
 	font-size: 0.8rem;
-	
+	padding: 5px 0;
 }
 
 footer a{
 	color: #fafacc;
+	
 }
 
 .footer-wrapper {
