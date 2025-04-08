@@ -226,7 +226,7 @@ button:active {
 
 .reviews-main {
 	width: 90%;
-	margin: 10vh auto;
+	margin: 15vh auto;
 	display: grid;
 	gap: 8rem 1rem;
 }
