@@ -29,6 +29,7 @@ header {
 	padding: 1rem;
 	background-color: #346A45;
 	width: 100%;
+	position: relative;
 }
 
 h1 {
@@ -36,14 +37,15 @@ h1 {
 	font-size: 2rem;
 	text-align: center;
 	background-color: #346A45;
+	line-height: 0.7;
 }
 
 .title-wrapper {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	color: #fafacc;
-	max-width: 60%;
-	flex-direction: row;
+	/* max-width: 60%; */
+	/* flex-direction: row; */
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
@@ -52,10 +54,10 @@ h1 {
 
 .title-secondary {
 	font-size: 0.8rem;
+	/* line-height: 0.3; */
 }
-
 nav {
-	margin-top: 0.5rem;
+	/* margin-top: 0.5rem; */
 }
 
 nav ul ul {
@@ -68,7 +70,11 @@ nav a {
 }
 
 #logo {
-	max-width: 3rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 0.3rem;
+	transform: translate(0, 50%);
 	border: 3px solid black;
 	border-radius: 50%;
 	background-color: #777;
@@ -210,9 +216,9 @@ button:active {
 
 .learn-main {
 	padding: 2rem;
-	margin: 1rem;
+	margin: 3rem auto;
 	justify-content: center;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	background-image: url(images/bubble-background.jpg);
 	background-size: contain;
 	background-repeat: repeat;
@@ -470,6 +476,7 @@ footer a{
 }
 
 .deal {
+	margin-top: 3rem;
 	padding: 2rem;
 	font-size: 2rem;
 	font-weight: 700;
@@ -538,9 +545,13 @@ textarea {
 		margin-bottom: 2rem;
 	}
 
+	#logo{
+		transform: translate(0, 130% );
+		/* margin: 0.5rem; */
+	}
+
 	h1 {
 		font-size: 3rem;
-		align-items: center;
 	}
 
 	.navmenu-mobile {
@@ -636,6 +647,7 @@ textarea {
 	}
 
 	.contact-main {
+		margin-top: 1rem;
 		font-size: 1.8rem;
 	}
 }
