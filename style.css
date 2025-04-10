@@ -290,6 +290,10 @@ footer li {
 footer a {
 	color: #fafacc;
 }
+footer a:hover {
+	color: #ffffff;
+	font-weight: 900;
+}
 
 .footer-wrapper {
 	max-width: fit-content;
@@ -330,6 +334,11 @@ footer a {
 .notes-content a {
 	color: #ffffff;
 	font-weight: 700;
+}
+.contact-us a:hover,
+.notes-content a:hover {
+	color: #ffffff;
+	letter-spacing: 0.05rem;
 }
 
 .category {
