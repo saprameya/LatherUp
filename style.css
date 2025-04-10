@@ -198,10 +198,9 @@ button:active {
 }
 
 .learn-main {
-	padding: 2rem;
-	margin: 3rem auto;
+	padding: 5rem;
 	justify-content: center;
-	/* margin: 0 auto; */
+	margin: 0 auto;
 	background-image: url(images/bubble-background.jpg);
 	background-size: contain;
 	background-repeat: repeat;
