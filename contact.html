@@ -99,18 +99,19 @@
 				<form id="#contact-form">
 					<fieldset>
 						<label for="first-name">First name</label>
-						<input type="text" name="first-name" id="first-name" />
+						<input type="text" name="first-name" id="first-name" required/>
 						<label for="last-name">Last name</label>
-						<input type="text" name="last-name" id="last-name" />
+						<input type="text" name="last-name" id="last-name" required/>
 						<label for="email">Email</label>
-						<input type="text" name="email" id="email" />
+						<input type="email" name="email" id="email" required/>
 						<label for="comments">Comments</label>
 						<textarea name="comments" id="comments"></textarea>
 					</fieldset>
 					<button
 						class="button"
 						id="contact-button"
-						onclick="alert('Thank you for contacting us. We will get in touch with you soon.')"
+						type="submit"
+						
 					>
 						Submit
 					</button>
