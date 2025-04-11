@@ -198,7 +198,7 @@ button:active {
 }
 
 .learn-main {
-	padding: 7vw;
+	padding: 12vw;
 	justify-content: center;
 	margin: 0 auto;
 	background-image: url(images/bubble-background.jpg);
@@ -668,9 +668,9 @@ textarea {
 	.deals {
 		flex-direction: row;
 		margin: 2rem;
+		align-items: center;
 	}
 
-	
 
 	.category {
 		grid-template-columns: 1fr 1fr 1fr;
