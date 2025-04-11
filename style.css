@@ -198,7 +198,7 @@ button:active {
 }
 
 .learn-main {
-	padding: 12vw;
+	padding: 8vh 2rem 2rem 2rem;
 	justify-content: center;
 	margin: 0 auto;
 	background-image: url(images/bubble-background.jpg);
@@ -488,6 +488,10 @@ footer a:hover {
 
 .video-link {
 	font-weight: 900;
+}
+.video-link:hover {
+	color: #346a45;
+	letter-spacing: 0.05rem;
 }
 
 form {
