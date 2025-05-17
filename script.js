@@ -26,6 +26,7 @@ addCartBtns.forEach((btn) => {
 		const item = btn.closest('.card');
 		if (!checkExistingCart(item)) {
 			addItemInCart(item);
+			alert('Item successfully added to cart.');
 		}
 	});
 });
