@@ -457,6 +457,7 @@ footer a:hover {
 
 .products-main {
 	position: relative;
+	width: 100%;
 }
 
 .cart-modal {
