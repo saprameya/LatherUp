@@ -472,6 +472,8 @@ footer a:hover {
 	transition: all 0.5s ease-in-out;
 	transform: translateX(200%);
 }
+
+
 .cart-li {
 	color: #fafacc;
 	cursor: pointer;
@@ -507,7 +509,7 @@ footer a:hover {
 	padding: 1rem;
 }
 
-.cart-item > .cart-detail {
+.cart-modal.show .cart-detail {
 	width: 100%;
 	padding-block: 1rem;
 }
