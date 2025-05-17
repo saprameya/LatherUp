@@ -23,6 +23,7 @@ img {
 body {
 	background-color: #fafacc;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	overflow-x: hidden;
 }
 
 header {
