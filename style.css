@@ -26,7 +26,6 @@ body {
 }
 
 header {
-	
 	padding: 1rem;
 	background-color: #346a45;
 	width: 100%;
@@ -463,16 +462,17 @@ footer a:hover {
 .cart-modal {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: -100%;
 	min-height: 100%;
 	background: hsl(139, 34%, 81%);
 	padding: 1rem;
 	z-index: 100;
-	max-width: 0;
-	transition: all 0.5s ease-in-out;
-	transform: translateX(200%);
-}
+	width: clamp(300px, 100%, 500px);
 
+	transition: all 0.5s ease-in-out;
+	transform: translateX(0%);
+	overflow: hidden;
+}
 
 .cart-li {
 	color: #fafacc;
@@ -480,9 +480,8 @@ footer a:hover {
 }
 
 .cart-modal.show {
-	width: clamp(300px, 100%, 500px);
-
-	transform: translateX(0);
+	transform: translateX(0%);
+	right: 0;
 }
 
 .cart-header {
@@ -694,10 +693,7 @@ textarea {
 		flex-wrap: nowrap;
 		gap: 1rem;
 		align-items: center;
-		
 	}
-
-	
 
 	header:nth-child(1) {
 		display: block;
