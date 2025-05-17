@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Product catalog of website selling handmade soaps" />
+		<meta name="keywords" content="soap, handmade, gentle, fragrance, natural" />
+		<meta name="author" content="Sheela Aprameya" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Lather Up: Products</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+				<img
+					src="images/LatherUpLogo.png"
+					alt="Lather Up logo"
+					id="logo"
+					width="100"
+				/>
+			</a>
+			<div class="title-wrapper">
+				<h1>Lather Up</h1>
+				<p class="title-secondary">Natural Handmade Soaps</p>
+			</div>
+
+			<nav>
+				<label for="navmenu-toggle" class="navmenu-label"
+					><img
+						src="images/menuIcon.png"
+						alt="menu icon"
+						width="160"
+						id="menu-icon"
+					/>
+				</label>
+				<input type="checkbox" id="navmenu-toggle" class="navmenu-toggle" />
+
+				<ul class="navmenu-mobile">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="deals.html">Deals</a>
+					</li>
+					<li>
+						<span class="current-page">Products</span>
+					</li>
+
+					<li>
+						<a href="learn.html">Learn</a>
+					</li>
+					<li>
+						<a href="reviews.html">Reviews</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+					<li>
+						<a href="cart.html">Cart</a>
+					</li>
+				</ul>
+				<ul class="navmenu">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="deals.html">Deals</a>
+					</li>
+					<li>
+						<span class="current-page">Products</span>
+					</li>
+
+					<li>
+						<a href="learn.html">Learn</a>
+					</li>
+					<li>
+						<a href="reviews.html">Reviews</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact Us</a>
+					</li>
+					<li>
+						<a href="cart.html">Cart</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<h2 class="page-h2">Our Products</h2>
+			<div class="products-main">
+				<h3 class="page-h3">Natural Soap Bars</h3>
+
+				<div class="category">
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Lavender Relaxation Bar</h3>
+							<img
+								src="images/lavender.jpg"
+								alt="lavender relaxation bar soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Perfect for a calming and aromatic bath experience, this
+									Lavender Relaxation Bar helps reduce stress and promote
+									relaxation.
+								</li>
+								<li>
+									Infused with natural lavender essential oils, it gently
+									cleanses while promoting a peaceful, tranquil experience for
+									your skin and spirit.
+								</li>
+								<li>Price: $4.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Citrus Sunshine Soap</h3>
+							<img
+								src="images/citrus.jpg"
+								alt="citrus sunshine bar soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									The zesty, invigorating scent of our Citrus Sunshine Bar Soap
+									is perfect for a refreshing start to your day.
+								</li>
+								<li>
+									Packed with vibrant citrus oils, it cleanses and energizes,
+									leaving your skin feeling fresh, smooth, and revitalized.
+									<br /><br />
+								</li>
+								<li>Price: $4.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Oatmeal and Honey Exfoliating Bar</h3>
+							<img
+								src="images/oatmeal-honey.jpg"
+								alt="oatmeal and honey exfoliating bar soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Reveal smoother, softer skin with our Oatmeal and Honey
+									Exfoliating Bar Soap, crafted to gently buff away dead skin
+									cells.
+								</li>
+								<li>
+									Infused with the nourishing power of honey and soothing oats,
+									it provides a calming cleanse while leaving your skin feeling
+									refreshed and hydrated.
+								</li>
+								<li>Price: $4.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Charcoal Detoxifying Bar</h3>
+							<img
+								src="images/charcoal.jpg"
+								alt="charcoal detoxifying bar soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Deep clean and detoxify your skin with our Charcoal
+									Detoxifying Bar Soap, designed to draw out impurities and
+									excess oil.
+								</li>
+								<li>
+									Packed with activated charcoal, it provides a refreshing
+									cleanse while leaving your skin feeling clean, clear, and
+									revitalized.
+								</li>
+								<li>Price: $4.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Coconut Cream Bar</h3>
+							<img
+								src="images/coconut.jpg"
+								alt="coconut cream bar soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									The luxurious, tropical scent of our Coconut Cream Bar Soap
+									leaves your skin feeling soft, hydrated, and refreshed.
+								</li>
+								<li>
+									Perfect for daily use, it gently cleanses while nourishing
+									your skin with the rich, moisturizing benefits of coconut.
+								</li>
+								<li>Price: $4.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Coffee Scrub Soap</h3>
+							<img
+								src="images/coffee.jpg"
+								alt="coffee scrub bar soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Wake up your skin with our Coffee Scrub Bar Soap, packed with
+									exfoliating coffee grounds to smooth and refresh.
+								</li>
+								<li>
+									Perfect for a revitalizing cleanse, it helps invigorate your
+									body while leaving a natural, energizing scent.
+								</li>
+								<li>Price: $4.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+				</div>
+				<h3 class="page-h3">Specialty Soap Bars</h3>
+
+				<div class="category">
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Goat Milk Bar</h3>
+							<img
+								src="images/goatmilk.jpg"
+								alt="goat milk bar soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Experience the luxurious, nourishing benefits of our Goat Milk
+									Specialty Bar Soap, crafted to hydrate and soothe your skin
+									with every use.
+								</li>
+								<li>
+									Made with natural ingredients, it leaves your skin feeling
+									soft, smooth, and refreshed all day long.
+								</li>
+								<li>Price: $6.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Aloe Vera Healing Soap</h3>
+							<img
+								src="images/aloe-vera.jpg"
+								alt="aloe vera healing soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Our Aloe Vera Healing Soap gently soothes and heals irritated
+									skin, promoting a natural, refreshed feel.
+								</li>
+								<li>
+									Infused with pure aloe vera, it nourishes and hydrates,
+									leaving your skin soft and rejuvenated.
+								</li>
+								<li>Price: $6.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Calendula Flower Soap</h3>
+							<img
+								src="images/calendula.jpg"
+								alt="calendula flower soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Our Calendula Flower Soap is crafted with the calming
+									properties of calendula, perfect for soothing sensitive skin.
+								</li>
+								<li>
+									With its gentle, nourishing formula, it leaves your skin
+									feeling soft, smooth, and beautifully refreshed.
+								</li>
+								<li>Price: $6.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Unscented Oatmilk Soap</h3>
+							<img
+								src="images/oatmilk.jpg"
+								alt="Unscented oatmilk soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Experience the gentle touch of nature with our unscented
+									Oatmilk soap, perfect for sensitive skin.
+								</li>
+								<li>
+									Crafted with nourishing oatmilk, it leaves your skin feeling
+									soft, hydrated, and refreshed without any overpowering scents.
+								</li>
+								<li>Price: $6.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Awakening Mint Soap</h3>
+							<img
+								src="images/mint-soap.jpg"
+								alt="Awakening mint soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Revitalize your senses with our Awakening Mint Soap, a
+									refreshing burst of minty goodness that energizes your skin.
+								</li>
+								<li>
+									Infused with invigorating mint, it gently cleanses and
+									refreshes, leaving you feeling awake and renewed.
+								</li>
+								<li>Price: $6.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+				</div>
+				<h3 class="page-h3">Gift Packs and Collections</h3>
+
+				<div class="category">
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Gift Pack</h3>
+							<img
+								src="images/gift-pack.jpg"
+								alt="Awakening mint soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Create the perfect personalized gift with our customizable
+									handmade soap pack, featuring a selection of luxurious,
+									artisanal scents.
+								</li>
+								<li>
+									Whether for a special occasion or just because, each carefully
+									crafted soap is a thoughtful, unique treat that will delight
+									any recipient.
+								</li>
+								<li>Price: $49.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-wrapper">
+							<h3>Sample Pack</h3>
+							<img
+								src="images/sample.jpg"
+								alt="Awakening mint soap"
+								width="640"
+							/>
+							<ul>
+								<li>
+									Indulge in the luxury of our handmade soap sample pack,
+									crafted with natural ingredients for a refreshing, skin-loving
+									experience.
+								</li>
+								<li>
+									Discover your new favorite scent and feel the difference of
+									quality, artisanal care with every bar.
+								</li>
+								<li>Price: $24.99</li>
+							</ul>
+							<button
+								class="button card-button"
+								onclick="alert('Item added to cart')"
+							>
+								Add to cart
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="site-map">
+				<div class="footer-wrapper">
+					<p>Site map:</p>
+					<ul class="navmenu-footer">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="deals.html">Deals</a>
+						</li>
+						<li>
+							<a href="products.html">Products</a>
+						</li>
+						<li>
+							<a href="learn.html">Learn</a>
+						</li>
+						<li>
+							<a href="reviews.html">Reviews</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact Us</a>
+						</li>
+						<li>
+							<a href="cart.html">Cart</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contact-us">
+				<div class="footer-wrapper">
+					<p>Connect with us:</p>
+					<ul>
+						<li><a href="mailto:s3794407@students.fscj.edu">Email</a></li>
+						<li><a href="tel:+13334567890">Call us</a></li>
+						<li class="social-media-icons" id="social-media-icons">
+							<a href="#social-media-icons"
+								><img
+									src="images/facebook.png"
+									alt="facebook link"
+									width="30"
+									onclick="alert('Coming soon')"
+							/></a>
+							<a href="#social-media-icons"
+								><img
+									src="images/xlink.png"
+									alt="x link"
+									width="30"
+									onclick="alert('Coming soon')"
+							/></a>
+							<a href="#social-media-icons"
+								><img
+									src="images/linkedin.png"
+									alt="x link"
+									width="30"
+									onclick="alert('Coming soon')"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="notes">
+				<div>
+					<p>Disclaimer:</p>
+					<p class="notes-content">
+						This website was created as part of a class project, and does not
+						represent an actual business. Products are not real, and buttons on
+						the website do not actually submit or store any information
+						anywhere.
+					</p>
+				</div>
+				<div class="notes-content">
+					Images used have been downloaded from different websites under their
+					respective licensing guidelines, and may have been edited or used as
+					is. See our image <a href="attributions.html">attributions.</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

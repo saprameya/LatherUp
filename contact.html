@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Sheela Aprameya" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lather Up: Contact Us</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+				<img
+					src="images/LatherUpLogo.png"
+					alt="Lather Up logo"
+					id="logo"
+					width="100"
+				/>
+			</a>
+			<div class="title-wrapper">
+				<h1>Lather Up</h1>
+				<p class="title-secondary">Natural Handmade Soaps</p>
+			</div>
+
+			<nav>
+				<label for="navmenu-toggle" class="navmenu-label"
+					><img
+						src="images/menuIcon.png"
+						alt="menu icon"
+						width="160"
+						id="menu-icon"
+					/>
+				</label>
+				<input type="checkbox" id="navmenu-toggle" class="navmenu-toggle" />
+
+				<ul class="navmenu-mobile">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="deals.html">Deals</a>
+					</li>
+					<li>
+						<a href="products.html">Products</a>
+					</li>
+
+					<li>
+						<a href="learn.html">Learn</a>
+					</li>
+					<li>
+						<a href="reviews.html">Reviews</a>
+					</li>
+					<li>
+						<span class="current-page">Contact</span>
+					</li>
+					<li>
+						<a href="cart.html">Cart</a>
+					</li>
+				</ul>
+				<ul class="navmenu">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="deals.html">Deals</a>
+					</li>
+					<li>
+						<a href="products.html">Products</a>
+					</li>
+
+					<li>
+						<a href="learn.html">Learn</a>
+					</li>
+					<li>
+						<a href="reviews.html">Reviews</a>
+					</li>
+					<li>
+						<span class="current-page">Contact</span>
+					</li>
+					<li>
+						<a href="cart.html">Cart</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div class="contact-main">
+				<h2 class="page-h2">
+					Need to get in touch? <br />
+					Contact us:
+				</h2>
+				<p>Please note: Any entered data will not be collected or stored.</p>
+				<form id="#contact-form" onsubmit="alert('Thank you for contacting us.  We will get back to you soon.')">
+					<fieldset>
+						<label for="first-name">First name</label>
+						<input type="text" name="first-name" id="first-name" required/>
+						<label for="last-name">Last name</label>
+						<input type="text" name="last-name" id="last-name" required/>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" required/>
+						<label for="comments">Comments</label>
+						<textarea name="comments" id="comments"></textarea>
+					</fieldset>
+					<button
+						class="button"
+						id="contact-button"
+						type="submit"
+						
+					>
+						Submit
+					</button>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<div class="site-map">
+				<div class="footer-wrapper">
+					<p>Site map:</p>
+					<ul class="navmenu-footer">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="deals.html">Deals</a>
+						</li>
+						<li>
+							<a href="products.html">Products</a>
+						</li>
+						<li>
+							<a href="learn.html">Learn</a>
+						</li>
+						<li>
+							<a href="reviews.html">Reviews</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact Us</a>
+						</li>
+						<li>
+							<a href="cart.html">Cart</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contact-us">
+				<div class="footer-wrapper">
+					<p>Connect with us:</p>
+					<ul>
+						<li><a href="mailto:s3794407@students.fscj.edu">Email</a></li>
+						<li><a href="tel:+13334567890">Call us</a></li>
+						<li class="social-media-icons" id="social-media-icons">
+							<a href="#social-media-icons"
+								><img
+									src="images/facebook.png"
+									alt="facebook link"
+									width="30"
+									onclick="alert('Coming soon')"
+							/></a>
+							<a href="#social-media-icons"
+								><img
+									src="images/xlink.png"
+									alt="x link"
+									width="30"
+									onclick="alert('Coming soon')"
+							/></a>
+							<a href="#social-media-icons"
+								><img
+									src="images/linkedin.png"
+									alt="x link"
+									width="30"
+									onclick="alert('Coming soon')"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="notes">
+				<div>
+					<p>Disclaimer:</p>
+					<p class="notes-content">
+						This website was created as part of a class project, and does not
+						represent an actual business. Products are not real, and buttons on
+						the website do not actually submit or store any information
+						anywhere.
+					</p>
+				</div>
+				<div class="notes-content">
+					Images used have been downloaded from different websites under their
+					respective licensing guidelines, and may have been edited or used as
+					is. See our image <a href="attributions.html">attributions.</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
