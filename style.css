@@ -721,15 +721,7 @@ textarea {
 		padding-top: 10%;
 	}
 
-	.cart-modal {
-		right: 0;
-		transform: translateX(100%);
-	}
-
-	.cart-modal.show {
-		transform: translateX(0%);
-		right: 0;
-	}
+	
 	.category {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -777,6 +769,16 @@ textarea {
 	.hero {
 		display: grid;
 		grid-template-columns: 15vw 1fr 2rem;
+	}
+
+	.cart-modal {
+		right: 0;
+		transform: translateX(100%);
+	}
+
+	.cart-modal.show {
+		transform: translateX(0%);
+		right: 0;
 	}
 
 	.hero img {
