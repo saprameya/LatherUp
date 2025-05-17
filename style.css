@@ -468,7 +468,7 @@ footer a:hover {
 	background: hsl(139, 34%, 81%);
 	padding: 1rem;
 	z-index: 100;
-	width: 0;
+	max-width: 0;
 	transition: all 0.5s ease-in-out;
 	transform: translateX(200%);
 }
