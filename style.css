@@ -111,12 +111,7 @@ nav a {
 	display: block;
 }
 
-.cart-li {
-	float: right;
-	position: relative;
-	font-size: 1.5rem;
-	transform: translateY(-1rem);
-}
+
 
 .item-count {
 	position: absolute;
@@ -173,22 +168,20 @@ main {
 
 .hero-content * {
 	padding-bottom: 0.8rem;
-	
 }
 
-.btn-wrapper{
+.btn-wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 5rem;
 }
 
-.btn-wrapper > *{
+.btn-wrapper > * {
 	font-size: 0.8rem;
 	text-align: center;
 	padding-block: auto;
 	width: fit-content;
-	
 }
 
 .leading-text {
@@ -477,7 +470,7 @@ footer a:hover {
 }
 
 .cart-modal {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	min-height: 100%;
@@ -493,6 +486,10 @@ footer a:hover {
 .cart-li {
 	color: #fafacc;
 	cursor: pointer;
+	float: right;
+	position: relative;
+	font-size: 1.5rem;
+	transform: translateY(-1rem);
 }
 
 .cart-modal.show {
@@ -737,7 +734,6 @@ textarea {
 		padding-top: 10%;
 	}
 
-	
 	.category {
 		grid-template-columns: 1fr 1fr;
 	}
