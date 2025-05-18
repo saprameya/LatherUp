@@ -152,12 +152,10 @@ function updateCartItems() {
 function updateTotal() {
 	var updatedTotal = 0;
 	pricesArray = [];
-	// console.log(`pricesArray before = ${pricesArray}`);
 
 	const cartItems = document.querySelectorAll('.cart-item');
 	var itemTotal = 0;
 	cartItems.forEach((item) => {
-		// console.log(`itemTotal before = ${itemTotal}`);
 
 		const text = item.querySelector('.cart-price').innerText.replace('$', '');
 		const price = parseFloat(text);
@@ -168,7 +166,6 @@ function updateTotal() {
 		}
 	});
 	pricesArray.sort((a, b) => b - a);
-	// console.log(pricesArray);
 
 	if (discount == 'FIRST') {
 		for (i = 0; i < pricesArray.length; i++) {
@@ -182,15 +179,12 @@ function updateTotal() {
 		}
 	}
 
-	console.log(pricesArray.length);
 
 	for (i = 0; i < pricesArray.length; i++) {
 		itemTotal += pricesArray[i];
-		// console.log(`itemTotal after = ${itemTotal}`);
 	}
 	updatedTotal = itemTotal;
 
-	// updatedTotal = updatedTotal - updatedTotal * discount;
 
 	total.innerText = `\$${updatedTotal.toFixed(2)}`;
 }
@@ -228,13 +222,12 @@ promoForm.addEventListener('submit', (e) => {
 	const code = promoCode.value.trim().toUpperCase();
 	if (!promoApplied) {
 		if (code !== 'FIRST' && code !== 'SPRING') {
-			// console.log(code);
-			// console.log(code !== 'FIRST' || code !== 'SPRING');
 			alert('Sorry, the promo code entered is invalid');
 			promoCode.value = '';
 		} else {
 			discount = code;
 			promoApplied = true;
+			alert('Your promo code has been successfully. The total price reflects the discounted price.')
 		}
 		updateTotal();
 	} else {
@@ -242,18 +235,3 @@ promoForm.addEventListener('submit', (e) => {
 	}
 });
 
-// function setPromoCode(code) {
-// 	if (code === 'FIRST') {
-// 		for (i = 0; i < pricesArray.length; i++) {
-// 			pricesArray[i] = pricesArray[i] * 0.8;
-// 		}
-// 	} else if (code === 'SPRING') {
-// 		if (i % 2 == 1) {
-// 			for (i = 0; i < pricesArray.length; i++) {
-// 				pricesArray[i] = pricesArray[i] / 2;
-// 			}
-// 		}
-// 	}
-// 	promoApplied = true;
-// 	discount = code;
-// }
