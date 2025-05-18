@@ -572,6 +572,30 @@ footer a:hover {
 	font-size: 1.5rem;
 	cursor: pointer;
 }
+/* .promo-form-wrapper{
+	margin: 0;
+	padding: 0;
+} */
+.promo-form{
+	min-width: 100%;
+	height: 2rem;
+	padding: 0;
+	padding-left: 1rem;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	border: none;
+	box-shadow: none;
+}
+
+.promo-form label{
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	width: 20ch;
+}
 
 .total {
 	padding-top: 1rem;

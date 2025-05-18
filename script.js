@@ -3,11 +3,18 @@ const cartModal = document.querySelector('.cart-modal');
 const cartClose = document.querySelector('#cart-close');
 const itemCount = document.querySelector('.item-count');
 itemCount.innerText = 0;
+const promoForm = document.querySelector('.promo-form');
+const apply = document.querySelector('button[value=apply]');
+const promoCode = document.querySelector('#promo-code');
+const formData = new FormData(promoForm, apply);
+var discount = '';
+var promoApplied = false;
 const btnBuy = document.querySelector('.btn-buy');
 
 const addCartBtns = document.querySelectorAll('.add-cart');
 const cartBox = document.querySelector('.cart-box');
 var cartBoxItems = [];
+var pricesArray = [];
 
 var total = document.querySelector('.total-price');
 total.innerText = '$0.00';
@@ -103,6 +110,7 @@ function addItemInCart(item) {
 	removeItemIcon.addEventListener('click', () => {
 		removeItemIcon.closest('.cart-item').remove();
 		updateTotal();
+
 		updateCartCount();
 		updateCartItems();
 	});
@@ -113,6 +121,7 @@ function addItemInCart(item) {
 
 		qty.innerText = newQty;
 		updateTotal();
+
 		updateCartCount();
 	});
 
@@ -126,6 +135,7 @@ function addItemInCart(item) {
 			qty.innerText = newQty;
 		}
 		updateTotal();
+
 		updateCartCount();
 	});
 	updateCartItems();
@@ -141,16 +151,46 @@ function updateCartItems() {
 
 function updateTotal() {
 	var updatedTotal = 0;
-	const cartItems = document.querySelectorAll('.cart-item');
+	pricesArray = [];
+	// console.log(`pricesArray before = ${pricesArray}`);
 
+	const cartItems = document.querySelectorAll('.cart-item');
+	var itemTotal = 0;
 	cartItems.forEach((item) => {
+		// console.log(`itemTotal before = ${itemTotal}`);
+
 		const text = item.querySelector('.cart-price').innerText.replace('$', '');
 		const price = parseFloat(text);
-
 		const quant = parseFloat(item.querySelector('.number').innerText);
-		var itemTotal = price * quant;
-		updatedTotal += itemTotal;
+
+		for (i = 0; i < quant; i++) {
+			pricesArray.push(price);
+		}
 	});
+	pricesArray.sort((a, b) => b - a);
+	// console.log(pricesArray);
+
+	if (discount == 'FIRST') {
+		for (i = 0; i < pricesArray.length; i++) {
+			pricesArray[i] = pricesArray[i] * 0.8;
+		}
+	} else if (discount === 'SPRING') {
+		for (i = 0; i < pricesArray.length; i++) {
+			if (i % 2 == 1) {
+					pricesArray[i] = pricesArray[i] / 2;
+			}
+		}
+	}
+
+	console.log(pricesArray.length);
+
+	for (i = 0; i < pricesArray.length; i++) {
+		itemTotal += pricesArray[i];
+		// console.log(`itemTotal after = ${itemTotal}`);
+	}
+	updatedTotal = itemTotal;
+
+	// updatedTotal = updatedTotal - updatedTotal * discount;
 
 	total.innerText = `\$${updatedTotal.toFixed(2)}`;
 }
@@ -181,3 +221,39 @@ btnBuy.addEventListener('click', () => {
 		alert('Thank you for your purchase.');
 	}
 });
+
+promoForm.addEventListener('submit', (e) => {
+	e.preventDefault();
+	pricesArray = [];
+	const code = promoCode.value.trim().toUpperCase();
+	if (!promoApplied) {
+		if (code !== 'FIRST' && code !== 'SPRING') {
+			// console.log(code);
+			// console.log(code !== 'FIRST' || code !== 'SPRING');
+			alert('Sorry, the promo code entered is invalid');
+			promoCode.value = '';
+		} else {
+			discount = code;
+			promoApplied = true;
+		}
+		updateTotal();
+	} else {
+		alert('You can only use one promo code.');
+	}
+});
+
+// function setPromoCode(code) {
+// 	if (code === 'FIRST') {
+// 		for (i = 0; i < pricesArray.length; i++) {
+// 			pricesArray[i] = pricesArray[i] * 0.8;
+// 		}
+// 	} else if (code === 'SPRING') {
+// 		if (i % 2 == 1) {
+// 			for (i = 0; i < pricesArray.length; i++) {
+// 				pricesArray[i] = pricesArray[i] / 2;
+// 			}
+// 		}
+// 	}
+// 	promoApplied = true;
+// 	discount = code;
+// }
