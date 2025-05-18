@@ -13,7 +13,6 @@ var total = document.querySelector('.total-price');
 total.innerText = '$0.00';
 
 cartLi.addEventListener('click', () => {
-	console.log('first');
 	cartModal.classList.add('show');
 });
 
@@ -121,6 +120,7 @@ function addItemInCart(item) {
 		var newQty = incrementBtn.previousElementSibling.innerText;
 		if (newQty == 1) {
 			decrementBtn.closest('.cart-item').remove();
+			updateCartItems();
 		} else if (newQty > 1) {
 			newQty--;
 			qty.innerText = newQty;
@@ -173,8 +173,6 @@ btnBuy.addEventListener('click', () => {
 	if (cartBoxItems.length == 0) {
 		alert('Your cart is empty. Please add items to cart in order to purchase.');
 	} else {
-		console.log(cartBox.innerHTML);
-
 		cartBox.innerHTML = '';
 		updateCartItems();
 		updateCartCount();
