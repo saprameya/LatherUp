@@ -471,14 +471,15 @@ footer a:hover {
 	position: fixed;
 	top: 0;
 	right: 0;
-	min-height: 100%;
+	min-height: 30%;
+	max-height: 70%;
 	background: hsl(139, 34%, 81%);
 	padding: 1rem;
 	z-index: -100;
 	opacity: 0;
-	width: clamp(300px, 100%, 500px);
+	width: 100%;
 	transition: all 0.5s ease-in-out;
-	overflow: hidden;
+	overflow: scroll;
 }
 
 .cart-li {
@@ -812,6 +813,8 @@ textarea {
 	.cart-modal {
 		right: 0;
 		transform: translateX(100%);
+		max-height: 100%;
+		width: clamp(300px, 100%, 500px);
 	}
 
 	.cart-modal.show {
