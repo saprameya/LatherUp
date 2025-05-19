@@ -151,9 +151,9 @@ function updateCartItems() {
 }
 
 function updateTotal() {
+	
 	var updatedTotal = 0;
 	pricesArray = [];
-
 	const cartItems = document.querySelectorAll('.cart-item');
 	var itemTotal = 0;
 	cartItems.forEach((item) => {
@@ -167,7 +167,7 @@ function updateTotal() {
 		}
 	});
 	pricesArray.sort((a, b) => b - a);
-
+	
 	if (discount == 'FIRST') {
 		for (i = 0; i < pricesArray.length; i++) {
 			pricesArray[i] = pricesArray[i] * 0.8;
@@ -185,7 +185,7 @@ function updateTotal() {
 		itemTotal += pricesArray[i];
 	}
 	updatedTotal = itemTotal;
-
+	
 
 	total.innerText = `\$${updatedTotal.toFixed(2)}`;
 }
@@ -239,9 +239,13 @@ promoForm.addEventListener('submit', (e) => {
 removeCode.addEventListener('click', ()=>{
 	if (promoApplied) {
 		promoApplied = false;
+		discount='';
 		alert('Promo code has been removed. No discount will be applied.');
+		
+		
 	} else{
 		alert('You have not added any promo code yet.');
 	}
+	updateTotal();
 })
 
