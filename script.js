@@ -5,6 +5,7 @@ const itemCount = document.querySelector('.item-count');
 itemCount.innerText = 0;
 const promoForm = document.querySelector('.promo-form');
 const apply = document.querySelector('button[value=apply]');
+const removeCode = document.querySelector('button[type=reset]');
 const promoCode = document.querySelector('#promo-code');
 const formData = new FormData(promoForm, apply);
 var discount = '';
@@ -234,4 +235,13 @@ promoForm.addEventListener('submit', (e) => {
 		alert('You can only use one promo code.');
 	}
 });
+
+removeCode.addEventListener('click', ()=>{
+	if (promoApplied) {
+		promoApplied = false;
+		alert('Promo code has been removed. No discount will be applied.');
+	} else{
+		alert('You have not added any promo code yet.');
+	}
+})
 
